@@ -6,18 +6,18 @@ Lazy Spec provides RSpec syntax that test common Rails functionality, like Shoul
 
 ### Usage
 
-```
-# http://en.wikipedia.org/wiki/Internet_media_type
-get '/api/v1/categories'
-expect(response).to have_json_type
-expect(response).to have_content_type('application/json')
-# http://billpatrianakos.me/blog/2013/10/13/list-of-rails-status-code-symbols/
-expect(response).to have_http_status(:error)
-expect(response).to have_charset('utf-8')
-expect(response).to be_a_collection
-expect(response).to be_a_collection(length: 10)
-expect(response['collection'][0]).to have_attributes(%w(id name))
-```
+
+    # http://en.wikipedia.org/wiki/Internet_media_type
+    get '/api/v1/categories'
+    expect(response).to have_json_type
+    expect(response).to have_content_type('application/json')
+    # http://billpatrianakos.me/blog/2013/10/13/list-of-rails-status-code-symbols/
+    expect(response).to have_http_status(:error)
+    expect(response).to have_charset('utf-8')
+    expect(response).to be_a_collection
+    expect(response).to be_a_collection(length: 10)
+    expect(response['collection'][0]).to have_attributes(%w(id name))
+
 
 ## Installation
 
@@ -43,22 +43,22 @@ Or install it yourself as:
 Now you can use matchers in your tests. For instance a model test might look
 like this:
 
-``` ruby
-describe 'UserApi' do
-  it 'response as JSON type' do
-    get '/api/v1/users'
-    expect(response).to have_json_type
-  end
-end
-```
+    ruby
+    describe 'UserApi' do
+        it 'response as JSON type' do
+            get '/api/v1/users'
+            expect(response).to have_json_type
+        end
+    end
+
 
 ### Configuration
 
 Include it in spec/rails_helper.rb
 
-```
-require 'lazy_spec'
-```
+
+    require 'lazy_spec'
+
 
 ## Contributing
 
@@ -86,6 +86,6 @@ Lazy Spec is maintained by Hoa Hoang, a young-passionate developer at [Silicon S
 
 If you want to know more about me, find me at:
 
-See [Linkedin][http://vn.linkendin.vn/hoahoangminh].
+See [Linkedin](http://vn.linkendin.vn/hoahoangminh).
 
 -
