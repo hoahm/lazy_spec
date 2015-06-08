@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['nobi.hoa@gmail.com']
   spec.summary       = 'Making unit test more easier than ever.'
   spec.description   = 'Making unit test more easier than ever.'
-  spec.homepage      = 'http://vn.linkedin.com/in/hoahoangminh'
+  spec.homepage      = 'https://github.com/hoahm/lazy_spec'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
